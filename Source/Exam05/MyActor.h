@@ -16,9 +16,12 @@ public:
 	AMyActor();
 	void Move();
 	int Step();
+	float GetDistance(FVector2D first, FVector2D second);
+	void CreateEvent();
 
 private:
 	FVector2d start;
+	int eventCount;
 
 protected:
 	// Called when the game starts or when spawned
